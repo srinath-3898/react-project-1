@@ -1,0 +1,42 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1040;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000099;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_content {
+  transition: all ease-in-out 0.5s;
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.modal_header {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 15%;
+}
+
+.modal_header button {
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  background-color: red;
+}
+
+.modal_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+}
