@@ -37,7 +37,16 @@ function App() {
         handleInputChange={handleInputChange}
       />
       <Users users={users} />
-      <Modal open={errorModalOpen} setOpen={setErrorModalOpen} error={error} />
+      {error ? (
+        <Modal
+          error={error}
+          handleCLose={() => {
+            setError("");
+          }}
+        />
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

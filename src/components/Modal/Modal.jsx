@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./Modal.module.css";
 
-const Modal = ({ open, setOpen, error }) => {
+const Modal = ({ error, handleCLose }) => {
   return (
-    <div className={styles.modal} style={{ display: open ? "flex" : "none" }}>
+    <div className={styles.modal}>
       <div className={styles.modal_content}>
         <div className={styles.modal_header}>
-          <button onClick={() => setOpen(false)}>close</button>
+          <button onClick={handleCLose}>close</button>
         </div>
         <div className={styles.modal_body}>
           <p>{error}</p>
